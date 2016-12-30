@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.kramer.email2.MainActivity">
+    <item
+        android:id="@+id/action_cancellation"
+        android:orderInCategory="100"
+        android:title="注销"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/change_user"
+        android:orderInCategory="100"
+        android:title="切换用户"
+        app:showAsAction="never" />
+</menu>

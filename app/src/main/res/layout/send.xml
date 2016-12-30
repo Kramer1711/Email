@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#0071BC"
+        android:padding="12dip"
+        android:textColor="@color/bg_white" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dip"
+            android:text="发送邮件"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/sendButton"
+            android:background="#0071bc"
+            android:src="@drawable/sendmail"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/receiverText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="收件人"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/receiverEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@id/receiverText"
+            android:hint="receiverName"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/subjectText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/receiverText"
+            android:layout_marginTop="12dp"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="主 题 "
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/subjectEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/receiverEdit"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@id/subjectText"
+            android:hint="subject"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/contentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="正 文"
+            android:textSize="18dp"
+            android:layout_below="@id/subjectText"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"/>
+        <EditText
+            android:id="@+id/contentEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="content"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:minLines="8"
+            android:scrollbars="vertical"
+            android:layout_below="@+id/contentText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+</RelativeLayout>
